@@ -23,12 +23,11 @@ Implementation Notes
 
 * Adafruit CircuitPython firmware for the supported boards:
   https://circuitpython.org/downloads
+* Adafruit_CircuitPython_BLE:
+  https://github.com/adafruit/Adafruit_CircuitPython_BLE
+* Adafruit_CircuitPython_HTTPServer
+  https://github.com/adafruit/Adafruit_CircuitPython_HTTPServer
 
-.. todo:: Uncomment or remove the Bus Device and/or the Register library dependencies
-  based on the library's use of either.
-
-# * Adafruit's Bus Device library: https://github.com/adafruit/Adafruit_CircuitPython_BusDevice
-# * Adafruit's Register library: https://github.com/adafruit/Adafruit_CircuitPython_Register
 """
 
 # imports

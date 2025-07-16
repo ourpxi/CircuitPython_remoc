@@ -18,6 +18,7 @@ This driver depends on:
 
 - [Adafruit CircuitPython](https://github.com/adafruit/circuitpython)
 - [Adafruit_CircuitPython_BLE](https://github.com/adafruit/Adafruit_CircuitPython_BLE)
+- [Adafruit_CircuitPython_HTTPServer](https://github.com/adafruit/Adafruit_CircuitPython_HTTPServer)
 
 > [!IMPORTANT]  
 > Please ensure all dependencies are available on the CircuitPython filesystem.  
