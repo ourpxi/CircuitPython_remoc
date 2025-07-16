@@ -8,7 +8,7 @@
 Remote function control over BLE and Wi-Fi for CircuitPython devices, using JSON commands and function decorators.
 
 > [!WARNING]  
-> This library is on development and won't work when installed.
+> This library is an experimental project by a junior developer. Expect bugs, weird behavior, and unfinished features. Use with caution :)
 
 ---
 
