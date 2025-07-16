@@ -18,10 +18,10 @@ def log(level: str, msg: str):
     Parameters:
         level (str): The severity level of the log message (e.g., "DEBUG", "INFO", "WARNING", "ERROR").
         msg (str): The message to be logged.
-    """
+    """ 
     if globals.log_level == "DEBUG":
         print(f"[remoc/{level}] {msg}")
-    elif globals.log_level == "INFO" and level != "DEBUG":
+    elif globals.log_level == "INFO" and level != "debug":
         print(f"[remoc/{level}] {msg}")
 
 def info(msg: str):

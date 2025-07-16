@@ -10,7 +10,7 @@ def connect_wifi(ssid, password):
         wifi.radio.connect(ssid, password)
         log("INFO", f"Conectado a Wi-Fi: {ssid}")
     except Exception as e:
-        log("ERROR", f"Error al conectar a Wi-Fi '{ssid}': {e}")
+        log("error", f"error al conectar a Wi-Fi '{ssid}': {e}")
 
 def start_http_server():
     try:
@@ -23,7 +23,7 @@ def start_http_server():
             try:
                 # Reset token and get new one
                 token = reset_token()
-                log("DEBUG", f"Token reset, sending to client: {token}")
+                log("debug", f"Token reset, sending to client: {token}")
                 
                 # Return token as JSON
                 response_data = {"token": token}
@@ -33,7 +33,7 @@ def start_http_server():
                     content_type="application/json"
                 )
             except Exception as e:
-                log("ERROR", f"Error handling GET request: {e}")
+                log("error", f"error handling GET request: {e}")
                 error_response = {"error": str(e)}
                 return Response(
                     request,
@@ -47,11 +47,11 @@ def start_http_server():
             try:
                 # Get JSON data from request body
                 json_data = request.json
-                log("DEBUG", f"Received POST data: {json_data}")
+                log("debug", f"Received POST data: {json_data}")
                 
                 # Call handlejson with the received data
                 result = handlejson(json.dumps(json_data))
-                log("DEBUG", f"Handler returned: {result}")
+                log("debug", f"Handler returned: {result}")
                 
                 # Return the result back to client
                 return Response(
@@ -60,7 +60,7 @@ def start_http_server():
                     content_type="application/json"
                 )
             except Exception as e:
-                log("ERROR", f"Error handling POST request: {e}")
+                log("error", f"error handling POST request: {e}")
                 error_response = {"error": str(e)}
                 return Response(
                     request,
@@ -74,4 +74,4 @@ def start_http_server():
         log("INFO", f"HTTP server started on {wifi.radio.ipv4_address}")
         
     except Exception as e:
-        log("ERROR", f"Error starting HTTP server: {e}")
+        log("error", f"error starting HTTP server: {e}")
