@@ -7,7 +7,7 @@
 Remote function control over BLE and Wi-Fi for CircuitPython devices, using JSON commands and function decorators.
 
 > [!WARNING]  
-> This library is in development and won't work when installed.
+> This library is on development and won't work when installed.
 
 ---
 
@@ -20,8 +20,8 @@ This driver depends on:
 
 > [!IMPORTANT]  
 > Please ensure all dependencies are available on the CircuitPython filesystem.  
-This is easily achieved by downloading the [Adafruit library and driver bundle](https://circuitpython.org/libraries),  
-or individual libraries can be installed using [`circup`](https://github.com/adafruit/circup).
+> This is easily achieved by downloading the [Adafruit library and driver bundle](https://circuitpython.org/libraries),  
+> or individual libraries can be installed using [`circup`](https://github.com/adafruit/circup).
 
 ---
 
