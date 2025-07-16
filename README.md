@@ -2,7 +2,8 @@
 
 ![Discord](https://img.shields.io/discord/327254708534116352.svg)
 [![Build Status](https://github.com/ourpxi/CircuitPython_remoc/workflows/Build%20CI/badge.svg)](https://github.com/ourpxi/CircuitPython_remoc/actions)
-[![Code Style: Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+![License](https://img.shields.io/github/license/ourpxi/CircuitPython_remoc)
+![Status](https://img.shields.io/badge/Status-Alpha-darkred)
 
 Remote function control over BLE and Wi-Fi for CircuitPython devices, using JSON commands and function decorators.
 
